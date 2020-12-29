@@ -3,7 +3,7 @@ fun main() { // or
 // fun main(args: Array<String>) { 
 
   /*==================================================
-    Variables
+  Variables
   ==================================================*/
 
   // Kotlin does not enforce immutability (recommended). Use val over var.
@@ -17,7 +17,7 @@ fun main() { // or
   println(d) // Compiler error - variable 'd' must be initialized
 
   /*==================================================
-    Null safety
+  Null safety
   ==================================================*/
 
   // Kotlin does not allow the assignment of null to variable types. If you need a variable that can be null, declare it nullable by adding ? at the end of its type.
