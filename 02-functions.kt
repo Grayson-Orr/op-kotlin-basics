@@ -1,6 +1,6 @@
-/*//////////////////////////////////////////////////
-// Default param values & named arguments
-//////////////////////////////////////////////////*/
+/*==================================================
+Default param values & named arguments
+==================================================*/
 
 // Function has a param of type String & returns Unit.
 fun printMessage(message: String): Unit {
@@ -20,9 +20,9 @@ fun sum(x: Int, y: Int): Int {
 // Single-expression function has two params of type Int & returns an Int (inferred).
 fun multiply(x: Int, y: Int) = x * y
 
-/*//////////////////////////////////////////////////
-// Vararg params
-//////////////////////////////////////////////////*/
+/*==================================================
+Vararg params
+==================================================*/
 
 // Vararg allows you to pass any number of arguments by separating them with commas.
 fun printCountries(vararg countries: String) {
