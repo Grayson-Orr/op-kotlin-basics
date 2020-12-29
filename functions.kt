@@ -1,5 +1,5 @@
 /*==================================================
-Functions - default param values & named arguments
+Default param values & named arguments
 ==================================================*/
 
 // Function has a param of type String & returns Unit.
@@ -9,7 +9,7 @@ fun printMessage(message: String): Unit {
 
 // Function has a second optional param with the default value of INFO:. Return type is omitted (returns Unit).
 fun printMessageWithPrefix(message: String, prefix: String = "INFO:") {
-  println("$prefix $message")
+  println("$prefix $message") 
 }
 
 // Function has two params of type Int & returns an Int.
@@ -21,7 +21,7 @@ fun sum(x: Int, y: Int): Int {
 fun multiply(x: Int, y: Int) = x * y
 
 /*==================================================
-Functions - vararg params
+Vararg params
 ==================================================*/
 
 // Vararg allows you to pass any number of arguments by separating them with commas.
