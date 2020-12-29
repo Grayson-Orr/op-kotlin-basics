@@ -34,9 +34,7 @@ fun printCountriesWithPrefix(vararg countries: String, prefix: String) {
   for (country in countries) println("$prefix $country")
 }
 
-// The entry point to a Kotlin program. In Kotlin 1.3, you can declare main without any params.
-fun main() { // or
-// fun main(args: Array<String>) {  
+fun main() {
   printMessage("Hello, World!")      
   printMessageWithPrefix("Test warning", "WARNING:")
   printMessageWithPrefix("Test info") // Calling the second function & omitting the second arg.
