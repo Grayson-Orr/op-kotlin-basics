@@ -40,7 +40,7 @@ fun main() { // or
   printMessage("Hello, World!")      
   printMessageWithPrefix("Test warning", "WARNING:")
   printMessageWithPrefix("Test info") // Calling the second function & omitting the second arg
-  printMessageWithPrefix(prefix = "DEBUG:", message = "Test debug") // Calling the same function using namde args & changing the order of args
+  printMessageWithPrefix(prefix = "DEBUG:", message = "Test debug") // Calling the same function using named args & changing the order of args
   println(sum(1, 2))                                                  
   println(multiply(2, 4))  
 
