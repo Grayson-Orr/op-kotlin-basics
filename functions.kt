@@ -42,8 +42,5 @@ fun main() {
   println(sum(1, 2))                                                  
   println(multiply(2, 4))  
   printCountries("Argentina", "Brazil", "China", "Democratic Republic of the Congo", "Ethiopia")      
-  printCountriesWithPrefix(
-    "France", "Germany", "Haiti",
-    prefix = "Country Name:"
-  )      
+  printCountriesWithPrefix("France", "Germany", "Haiti", prefix = "Country Name:")      
 }
