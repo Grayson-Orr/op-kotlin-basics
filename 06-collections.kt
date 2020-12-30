@@ -65,15 +65,15 @@ fun main() {
   getProgLanguages().forEach {
     i -> println(i)
   }
-
-  val newCEO: String = "John Doe"
-  val existingCEO: String = "Steve Ballmer"
-  println("$newCEO ${getStatusLog(addCEO(newCEO))}")
-  println("$existingCEO ${getStatusLog(addCEO(existingCEO))}")
-
+  
   bankAccountReport()
   addTransactionFee("Rent")
   addTransactionFee("Rent")
   addTransactionFee("Petty")
   bankAccountReport()
+
+  val newCEO: String = "John Doe"
+  val existingCEO: String = "Steve Ballmer"
+  println("$newCEO ${getStatusLog(addCEO(newCEO))}")
+  println("$existingCEO ${getStatusLog(addCEO(existingCEO))}")
 }
