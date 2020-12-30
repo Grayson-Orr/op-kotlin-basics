@@ -11,7 +11,7 @@ fun main() { // or
   println(a)
   val b: Int = 1 // Immutable variable.
   println(b)
-  val c = 3  // Immutable variable. Initialised without specifying the type. The compiler infers the type Int.
+  val c = 3  // Immutable variable. Initialized without specifying the type. The compiler infers the type Int.
   println(c)
   var d: Int
   println(d) // Compiler error - variable 'd' must be initialized
