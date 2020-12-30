@@ -2,20 +2,20 @@
 Data class
 ==================================================*/
 
-// Define a data class with the data modifier
+// Data class with the data modifier
 data class Employee(val id: Int, var firstName: String, var lastName: String) 
 
 /*==================================================
 Enum class
 ==================================================*/
 
-// Define an enum class with three instances
+// Enum class with three instances
 enum class State {
   GREEN, RED, AMBER // The number of instances is finite & distinct
 }
 
-// Define an enum class with a property & a method
-enum class Color(val rgb: Int) { // Each instance must pass an argument for the constructor parameter
+// Enum class with a property & a method
+enum class Color(val rgb: Int) { // Each instance must pass an arg for the constructor param
   RED(0xFF0000),
   GREEN(0x00FF00),
   BLUE(0x0000FF);
@@ -28,9 +28,12 @@ enum class Color(val rgb: Int) { // Each instance must pass an argument for the 
 Object keyword
 ==================================================*/
 
-// Used to obtain a data type with a single implementation. In Kotlin, you only need to declare an object. It has no class, no constructor, only a lazy instance. Why lazy? It will be created when the object is accessed, otherwise, it will not be created.
+// Used to obtain a data type with a single implementation. In Kotlin, you only need to declare an 
+// object. It has no class, no constructor, only a lazy instance. Why lazy? It will be created when the 
+// object is accessed, otherwise, it will not be created
 
-// Object expression. You can create a single object, declare its members & access it within one function. Objects like this are often created in Java as anonymous class instances
+// Object expression. You can create a single object, declare its members & access it within 
+// one function. Objects like this are often created in Java as anonymous class instances
 fun rentPrice(standardDays: Int, holidayDays: Int): Unit {
   val rates = object {
     var standard: Int = 30 * standardDays
@@ -40,7 +43,7 @@ fun rentPrice(standardDays: Int, holidayDays: Int): Unit {
   println("Total price: $$total")
 }
 
-// Object declaration. It is not an expression & can not be used in a variable assignment. You should use it to directly access its members
+// Object declaration. It is not an expression & can not be used in a variable assignment. Use it to directly access its members
 object Price {
   fun rentPrice(standardDays: Int, holidayDays: Int): Unit {
     var standard: Int = 30 * standardDays
@@ -50,7 +53,7 @@ object Price {
   }
 }
 
-// It is similar to the static methods in Java. You call object members using its class name as a qualifier
+// It is similar to static methods in Java. Call object members using its class name as a qualifier
 class Phone {
   companion object Ringer { // Its name can be omitted
     fun getRings(nTimes: Int) {
@@ -58,7 +61,6 @@ class Phone {
     }
   }
 }
-
 
 fun main() {
   val employeeOne = Employee(1, "John", "Doe")
@@ -70,12 +72,12 @@ fun main() {
   println(employeeTwo.hashCode())
   println("employeeOne == employeeTwo: ${employeeOne == employeeTwo}")
   println("employeeTwo == employeeThree: ${employeeTwo == employeeThree}")
-  println(employeeThree.copy()) // Create a new instance of employeeThree using the copy function
+  println(employeeThree.copy()) // New instance of employeeThree using the copy function
   println(employeeThree.copy(3)) // copy accepts args in the same order as the class constructor
   println(employeeThree.copy(firstName = "Joe")) // Use copy with named arguments to change the a specific prop value
 
   val state = State.GREEN
-  val trafficLights = when (state) { // The compiler can infer if a when-expression is exhaustive
+  val trafficLights = when (state) { // Compiler can infer if a when-expression is exhaustive
     State.GREEN -> "Go"
     State.RED -> "Stop"
     State.AMBER -> "Slow down"
@@ -83,7 +85,7 @@ fun main() {
   println(trafficLights)
 
   val green = Color.GREEN
-  println(green) // The default toString returns the name of the instance
+  println(green) // Default toString returns the name of the instance
   println(green.containsGreen())
   println(Color.BLUE.containsGreen())
 
