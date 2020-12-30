@@ -1,10 +1,11 @@
-// Generic classes & functions increase code reusability by encapsulating common logic that is independent of a particular generic type
+// Generic classes & functions increase code reusability by encapsulating 
+// common logic that is independent of a particular generic type
 
 /*==================================================
 Generic classes
 ==================================================*/
 
-// Defines a generic class Stack<T> where T is called the generic type param 
+// Generic class Stack<T> where T is called the generic type param 
 class Stack<T>(vararg items: T) {
   // Inside the generic class, T can be used as a parameter like any other type
   private val els = items.toMutableList()
@@ -21,7 +22,8 @@ class Stack<T>(vararg items: T) {
 Generic functions
 ==================================================*/
 
-// A utility function to create mutable stacks. The compiler can infer the generic type from the params, so you do not need to write stackOf<Int>(...)
+// Utility function to create mutable stacks. The compiler can infer the generic type 
+// from the params, so you do not need to write stackOf<Int>(...)
 fun <T> stackOf(vararg els: T) = Stack(*els)
 
 fun main() {
