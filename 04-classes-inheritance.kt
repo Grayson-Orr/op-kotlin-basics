@@ -44,7 +44,7 @@ class SiberianTiger : Tiger("Sikhote-Alin", "roooaaar")
 Passing constructor args to superclass
 ==================================================*/
 
-// region in the BengalTiger declaration is neither a var nor val (it is a constructor arg), who value is passed to the name props of the superclass
+// region in the BengalTiger declaration is neither a var nor val (it is a constructor arg), whose value is passed to the name prop of the superclass Tiger
 class BengalTiger(region: String) : Tiger(region = region, sound = "roooaaar")
 
 fun main() {
@@ -53,6 +53,7 @@ fun main() {
   println(person)
   val employee = Employee(1, "John", "Doe")
   employee.firstName = "Jane" // Updating the Employee object's firstName to Jane
+  println(employee)
   println("${employee.firstName} ${employee.lastName}") // Accessing the Employee object's firstName & lastName props
 
   val dog: Dog = Bulldog()
