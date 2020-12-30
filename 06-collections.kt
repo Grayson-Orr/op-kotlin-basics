@@ -22,7 +22,6 @@ Map
 // Collection of key/value pairs where each key is unique & is used to retrieve the corresponding value. For 
 // map creation, use the std lib functions mutableMapOf() & mapOf(). To prevent unwanted modifications, obtain read-only 
 // views of mutable map by casting them to Map
-
 const val TRANS_FEE: Int = 15
 
 val bankAccounts: MutableMap<String, Int> = mutableMapOf("Rent" to 100, "Groceries" to 100, "KiwiSaver" to 100)
