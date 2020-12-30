@@ -19,7 +19,7 @@ open class Dog {
   }
 }
 
-// The empty parentheses indicate an invocation of the superclass's default constructor.
+// The empty parentheses indicate an invocation of the superclasses default constructor.
 class Bulldog : Dog() {
   // Overriding methods or attributes requires the override modifier.
   override fun sound() { 
