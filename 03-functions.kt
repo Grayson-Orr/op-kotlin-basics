@@ -2,12 +2,12 @@
 Default param values & named arguments
 ==================================================*/
 
-// Function has a param of type String & returns Unit
+// Function has a param of type String & returns Unit. You can think of Unit as void in other modern programming languages such as C++, C#, Java, etc
 fun printMessage(message: String): Unit {
   println(message)
 }
 
-// Function has a second optional param with the default value of INFO:. Return type is omitted (returns Unit)
+// Function has a second optional param with the default value of INFO:. Return type is omitted
 fun printMessageWithPrefix(message: String, prefix: String = "INFO:") {
   println("$prefix $message") 
 }
@@ -17,7 +17,7 @@ fun sum(x: Int, y: Int): Int {
   return x + y
 }
 
-// Single-expression function has two params of type Int & returns an Int (inferred)
+// Single-expression function has two params of type Int & returns an Int. The type is inferred by the compiler
 fun multiply(x: Int, y: Int) = x * y
 
 /*==================================================
@@ -29,7 +29,6 @@ fun printCountries(vararg countries: String) {
   for (country in countries) println(country)
 }
 
-// Using named parameters, you can set a value to prefix separately from the vararg
 fun printCountriesWithPrefix(vararg countries: String, prefix: String) {
   for (country in countries) println("$prefix $country")
 }
@@ -45,5 +44,5 @@ fun main() {
   println(multiply(2, 4))  
   
   printCountries("Argentina", "Brazil", "China", "Democratic Republic of the Congo", "Ethiopia")      
-  printCountriesWithPrefix("France", "Germany", "Haiti", prefix = "Country Name:")      
+  printCountriesWithPrefix("France", "Germany", "Haiti", prefix = "Country Name:") // You can set a value to prefix separately from the vararg using named args    
 }
