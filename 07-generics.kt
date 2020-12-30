@@ -21,7 +21,7 @@ class Stack<T>(vararg items: T) {
 Generic functions
 ==================================================*/
 
-// A utility function to create mutable stacks. The compiler can infer the generic type from the parameters, so you do not need to write stackOf<Int>(...)
+// A utility function to create mutable stacks. The compiler can infer the generic type from the params, so you do not need to write stackOf<Int>(...)
 fun <T> stackOf(vararg els: T) = Stack(*els)
 
 fun main() {
