@@ -2,7 +2,7 @@
 Conditional expressions
 ==================================================*/
 
-// In Kotlin, there is no ternary operator. Instead, an if statement may be used as an expression
+// In Kotlin, there is no ternary operator :(
 fun max(x: Int, y: Int) = if (x > y) x else y
 
 /*==================================================
@@ -34,12 +34,13 @@ fun main() {
   var steaksEaten = 0
   var steaksCooked = 0
     
-  while (steaksEaten < 5) { // Executes the block while the condition is true
+  // While & do-while work the same as most modern programming languages
+  while (steaksEaten < 5) { // While the condition is true, execute the block
     eatASteak()
     steaksEaten++
   }
   
-  do { // Executes the block first & then checks the condition
+  do { // Execute the block & then check the condition
     cookASteak()
     steaksCooked++
   } while (steaksCooked < steaksEaten)
