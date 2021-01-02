@@ -1,5 +1,9 @@
 fun max(x: Int, y: Int): Int = if (x > y) x else y
 
+fun eatASteak() = println("Yum yum...eating a steak!")
+
+fun cookASteak() = println("Sizzle sizzle...cooking a steak!")
+
 fun greeting(country: String) =
   when (country) {
     "China" -> println("你好")
@@ -34,8 +38,8 @@ fun main() {
   greeting("Italy")
   greeting("Russia")
   
-  for(i in 0..10) print(i) 
-  for(i in 0 until 5) print(i) 
-  for(i in 2..10 step 2) print(i) 
+  for (i in 0..10) print(i) 
+  for (i in 0 until 5) print(i) 
+  for (i in 2..10 step 2) print(i) 
   for (i in 5 downTo 0) print(i) 
 }
