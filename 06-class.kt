@@ -1,8 +1,4 @@
-class Person(
-  val id: Int,
-  var firstName: String,
-  var lastName: String
-) {
+class Person(val id: Int, var firstName: String, var lastName: String) {
   override fun toString() = "Person(id=$id, firstName=$firstName, lastName=$lastName)"
 }
 
