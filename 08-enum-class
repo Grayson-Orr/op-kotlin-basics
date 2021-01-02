@@ -1,0 +1,13 @@
+enum class State {
+  GREEN, RED, AMBER
+}
+
+fun main() {
+  val state = State.GREEN
+  val trafficLights = when (state) {
+    State.GREEN -> "Go"
+    State.RED -> "Stop"
+    State.AMBER -> "Slow down"
+  }
+  println(trafficLights) // Go
+}
