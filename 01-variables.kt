@@ -1,7 +1,6 @@
 // Entry point to a Kotlin program. In Kotlin 1.3, you can declare main without any params
 fun main() { // or
 // fun main(args: Array<String>) { 
-
   var a: String = "Hello, World!"
   println(a)
 
