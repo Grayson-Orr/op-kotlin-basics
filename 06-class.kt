@@ -2,6 +2,18 @@ class Person(val id: Int, var firstName: String, var lastName: String) {
   override fun toString() = "Person(id=$id, firstName=$firstName, lastName=$lastName)"
 }
 
+class Person constructor(_id: Int, _firstName: String, _lastName: String) {
+  val id: Int
+  var firstName: String
+  var lastName: String
+
+  init {
+    id = _id
+    firstName = _firstName
+    lastName = _lastName
+  } 
+}
+
 class Rectangle(val height: Int, val width: Int) {
   val isSquare: Boolean
   get() {
