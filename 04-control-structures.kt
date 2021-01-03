@@ -19,6 +19,11 @@ fun main() {
   val countries = mutableListOf<String>("Australia", "Brazil", "Canada")
   for (country in countries) println(country)
   
+  for (i in 0..10) print(i) 
+  for (i in 0 until 5) print(i) 
+  for (i in 2..10 step 2) print(i) 
+  for (i in 5 downTo 0) print(i) 
+  
   var steaksEaten = 0
   var steaksCooked = 0
     
@@ -37,9 +42,4 @@ fun main() {
   
   greeting("Italy")
   greeting("Russia")
-  
-  for (i in 0..10) print(i) 
-  for (i in 0 until 5) print(i) 
-  for (i in 2..10 step 2) print(i) 
-  for (i in 5 downTo 0) print(i) 
 }
