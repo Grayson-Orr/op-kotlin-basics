@@ -24,8 +24,8 @@ fun addTransactionFee(accountName: String) {
 
 fun bankAccountReport() {
   println("Bank account report:")
-  bankReport.forEach {
-    k, v -> println("$k - $$v")
+  for ((k, v) in bankReport) {
+    println("$k - $$v")
   }
 }
 
@@ -44,8 +44,8 @@ fun getStatusLog(isAdded: Boolean): String {
 fun main() { 
   addProgLang("MATLAB")
   println("Total programming languages: ${getProgLanguages().size}") // Total programming languages: 4
-  getProgLanguages().forEach {
-    i -> println(i)
+  for (i in getProgLanguages()) {
+    println(i)
   }
  
   bankAccountReport()
